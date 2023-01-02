@@ -1,0 +1,43 @@
+header>nav>ul{
+    display: flex;
+}
+header>nav>ul li{
+    list-style: none;
+    margin-right: 2em;
+}
+header>nav>ul>li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.mega_menu{
+    
+}
+.dropdown{
+    position: absolute;
+    background-color: ghostwhite;
+    display: none;
+    padding: 0;
+
+}
+
+nav ul li:hover .dropdown{
+    display: block;
+}
+
+.dropdown li a:hover{
+    color: green;
+}
+nav ul li:hover .dropdown.menu>ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+nav ul li:hover .dropdown.menu.mega_menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+.mega_menu h4{
+    color: goldenrod;
+    margin-bottom: 0;
+}
+
